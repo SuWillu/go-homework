@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+func main(){
+	go PrintNumber(1)
+	go PrintNumber(2)
+	go PrintNumber(3)
+        time.Sleep(time.Second * 5)
+}
+
+func PrintNumber(number int){
+        fmt.Println(number)
+	time.Sleep(time.Second)
+}
